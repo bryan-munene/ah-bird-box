@@ -1,0 +1,18 @@
+[Unit]
+Description=AH Birdbox startup service
+After=network.target
+After=systemd-user-sessions.service
+After=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/ah-bird-box
+ExecStart=/bin/bash /home/ubuntu/ah-bird-box/startapp.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+
+docker exec -it <container name> <command>

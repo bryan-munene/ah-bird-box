@@ -1,6 +1,4 @@
-source venv/bin/activate
-
-xport DATABASE_URL="postgresql://YOUR_ROLE:PASSWORD@localhost:5432/DB_NAME"
+export DATABASE_URL="postgresql://YOUR_ROLE:PASSWORD@localhost:5432/DB_NAME"
 export SECRET_KEY='YOUR SECRET KEY GOES HERE'
 export FACEBOOK_KEY="FACEBOOK KEY HERE"
 export FACEBOOK_SECRET="FACEBOOK SECRET HERE"
